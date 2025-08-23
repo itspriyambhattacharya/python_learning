@@ -1,3 +1,3 @@
-from 1_hello_python import func
+from hello_python import func
 
 func(4)
