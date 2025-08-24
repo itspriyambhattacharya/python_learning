@@ -1,4 +1,5 @@
 from decimal import Decimal
+import fractions
 n = 1
 print(n << 2)
 
@@ -14,3 +15,9 @@ print(res)
 y = Decimal('0.1')+Decimal('0.1')+Decimal('0.1')-Decimal('0.3')
 print(y)
 print(type(y))
+
+
+f1 = fractions.Fraction(2, 5)
+f2 = fractions.Fraction(3, 6)
+print(f1+f2)
+print(f1.numerator)
