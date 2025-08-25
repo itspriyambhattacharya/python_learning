@@ -64,3 +64,13 @@ print(lst)
 print(lst2copy)
 lst.insert(88, 100)
 print(lst)
+print('================================================ List Comprehension ================================================')
+
+lComp1 = [i for i in range(1, 11)]
+print(lComp1)
+
+lComp2 = [i+1 for i in range(10)]
+print(lComp2)
+
+lComp3 = [i*6 for i in range(10)]
+print(lComp3)
