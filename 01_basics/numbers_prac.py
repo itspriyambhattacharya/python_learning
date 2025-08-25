@@ -21,3 +21,11 @@ f1 = fractions.Fraction(2, 5)
 f2 = fractions.Fraction(3, 6)
 print(f1+f2)
 print(f1.numerator)
+
+s1 = {1, 2, 3, 4}
+s2 = {1, 3, 7}
+print(s1.intersection(s2))
+print(s1.union(s2))
+print(s1.difference(s2))
+print(s2.difference(s1))
+print(s1.difference(s1))
