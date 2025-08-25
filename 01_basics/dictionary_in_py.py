@@ -31,3 +31,21 @@ print(tea_shop["tea1"])  # return a sub-dictionary
 print(tea_shop["tea2"]["black"])
 print(tea_shop.get("tea2"))
 print(tea_shop.get("tea2").get("green"))
+
+# dictionary comprihension
+print('================================================ Dictionary Comprehension ================================================')
+sq_dict = {
+    x: x**2 for x in range(14)
+}
+print(sq_dict)
+
+print(f"The cleared dictionay is {sq_dict.clear()}")
+print(f'{sq_dict}')
+
+# dictionary from list
+
+keys = ["10", "12", "BSc", "MSc"]
+defalut_value = 60
+
+new_dict = dict.fromkeys(keys, defalut_value)
+print(new_dict)
