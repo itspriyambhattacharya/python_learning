@@ -22,3 +22,18 @@ lst = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 lst[1:3] = []
 print(lst)
+
+# Intro to loops and conditions
+
+lst = [0, 1, 2, 3]
+
+for i in lst:
+    print(i)
+
+for i in lst:
+    print(i, end=" -> ")
+
+if 34 in lst:
+    print("Yes exists")
+else:
+    print("No, doesn't exists")
