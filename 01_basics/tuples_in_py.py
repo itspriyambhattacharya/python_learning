@@ -14,3 +14,29 @@ print(f"The length of the tuple is: {len(tup1)}")
 tup2 = (9, 8, 7)
 tup_all = tup1+tup2
 print(tup_all)
+
+if 5 in tup_all:
+    print("Success")
+else:
+    print("Absent")
+
+tup3 = (1, 2, 2, 2, 3, 4, 4, 3, 7, 7)
+print(tup3.count(3))
+
+print('================================================ Unpacking Tuples ================================================')
+t1 = (1, 2, 3)
+
+try:
+    (one, two) = t1
+    print(one)
+    print(two)
+except ValueError:
+    print("Value Error occured during Unpacking due to too few arguments")
+
+try:
+    (one, two, three) = t1
+    print(one)
+    print(two)
+    print(three)
+except ValueError:
+    print("Value Error occured during Unpacking due to too few arguments")
