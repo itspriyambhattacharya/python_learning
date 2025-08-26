@@ -11,3 +11,10 @@ if fl == True:
     print(f"The first non-repeating character is {s1[idx]}")
 else:
     print("Nothing found")
+
+
+# Method 2(Eaasier one):
+for c in s1:
+    if (s1.count(c) == 1):
+        print(f"The first non-repeating character is {s1[idx]}")
+        break
