@@ -27,3 +27,6 @@ try:
 
 except StopIteration:
     print("Exception Occured, reached end of dictionary")
+
+I3 = iter(range(4))
+print(I3)
