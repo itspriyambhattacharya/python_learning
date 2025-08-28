@@ -1,4 +1,5 @@
 class Car:
+    # constructor
     def __init__(self, brand, model):
         self.__brand = brand  # changing the acces type of data members from public to private
         self.__model = model  # changing the acces type of data members from public to private
@@ -6,11 +7,19 @@ class Car:
     def display(self):
         return f"{self.__brand} {self.__model}"
 
+    # getter methods
     def get_brand(self):
         return self.__brand
 
     def get_model(self):
         return self.__model
+
+    # setter methods
+    def set_brand(self, brand):
+        self.__brand = brand
+
+    def set_model(self, model):
+        self.__model = model
 
 
 class ElectricCar(Car):
@@ -34,6 +43,10 @@ print(c1.get_brand())
 print(c1.get_model())
 print(c2.get_model())
 print(c2.display())
+
+c1.set_brand("Hyundai")
+c1.set_model("Verna")
+print(c1.display())
 
 c3 = ElectricCar("Tesla", "Model1", 4000)
 print(c3.display())
