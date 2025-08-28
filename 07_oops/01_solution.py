@@ -21,6 +21,10 @@ class Car:
     def set_model(self, model):
         self.__model = model
 
+    # polymorphism
+    def fuel_type(self):
+        return "Petrol or Diesel"
+
 
 class ElectricCar(Car):
     def __init__(self, brand, model, battery_size):
@@ -29,6 +33,9 @@ class ElectricCar(Car):
 
     def display(self):
         return f"{super().display()} and battery size is {self.battery_size}kWh"
+
+    def fuel_type(self):
+        return "Electric Charge"
 
 
 c1 = Car("Toyota", "Corolla")
@@ -50,3 +57,8 @@ print(c1.display())
 
 c3 = ElectricCar("Tesla", "Model1", 4000)
 print(c3.display())
+
+# polymorphism test
+print(c1.fuel_type())
+print(c2.fuel_type())
+print(c3.fuel_type())
