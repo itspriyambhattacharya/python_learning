@@ -77,3 +77,10 @@ print(Car.total_cars)
 
 # accessing static method
 print(Car.get_info())
+
+# isinstance() method
+
+print(isinstance(c1, Car))
+print(isinstance(c1, ElectricCar))
+print(isinstance(c3, Car))
+print(isinstance(c3, ElectricCar))
