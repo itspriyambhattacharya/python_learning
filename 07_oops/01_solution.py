@@ -1,8 +1,12 @@
 class Car:
+    # class variable
+    total_cars = 0
     # constructor
+
     def __init__(self, brand, model):
         self.__brand = brand  # changing the acces type of data members from public to private
         self.__model = model  # changing the acces type of data members from public to private
+        Car.total_cars += 1
 
     def display(self):
         return f"{self.__brand} {self.__model}"
@@ -62,3 +66,6 @@ print(c3.display())
 print(c1.fuel_type())
 print(c2.fuel_type())
 print(c3.fuel_type())
+
+# print class variable
+print(Car.total_cars)
