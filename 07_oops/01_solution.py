@@ -24,5 +24,5 @@ print(c1.model)
 print(c2.model)
 print(c2.display())
 
-c3 = ElectricCar("Tesla", "Model1", "4000")
+c3 = ElectricCar("Tesla", "Model1", 4000)
 print(c3.display())
