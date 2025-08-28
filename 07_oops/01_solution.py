@@ -13,7 +13,7 @@ class ElectricCar(Car):
         self.battery_size = battery_size
 
     def display(self):
-        return super().display()
+        return f"{super().display()} and battery size is {self.battery_size}kWh"
 
 
 c1 = Car("Toyota", "Corolla")
