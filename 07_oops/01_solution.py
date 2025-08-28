@@ -29,6 +29,11 @@ class Car:
     def fuel_type(self):
         return "Petrol or Diesel"
 
+    # static method
+    @staticmethod
+    def get_info():
+        return f"Cars are means of transport"
+
 
 class ElectricCar(Car):
     def __init__(self, brand, model, battery_size):
@@ -69,3 +74,6 @@ print(c3.fuel_type())
 
 # print class variable
 print(Car.total_cars)
+
+# accessing static method
+print(Car.get_info())
