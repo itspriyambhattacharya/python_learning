@@ -84,3 +84,23 @@ print(isinstance(c1, Car))
 print(isinstance(c1, ElectricCar))
 print(isinstance(c3, Car))
 print(isinstance(c3, ElectricCar))
+
+
+# multiple inheritance
+class Battery:
+    def battery_info(self):
+        return f"Battery remaining is : 47%"
+
+
+class Engine:
+    def engine_info(self):
+        return f"Engine Condition: Good"
+
+
+class EC2(Car, Battery, Engine):
+    pass
+
+
+myNewCar = EC2("B1", "M1")
+print(myNewCar.battery_info())
+print(myNewCar.engine_info())
